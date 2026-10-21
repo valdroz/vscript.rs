@@ -1,0 +1,15 @@
+[package]
+name = "vscript"
+version = "3.8.0"
+edition = "2021"
+description = "vscript — language for dynamic expression execution (Rust port of valdroz/vscript)"
+license = "Apache-2.0"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+chrono-tz = "0.9"
+rust_decimal = { version = "1", features = ["maths"] }
+rust_decimal_macros = "1"
+once_cell = "1"
+serde_json = { version = "1", features = ["preserve_order", "arbitrary_precision"] }
+serde = { version = "1", features = ["derive"] }
